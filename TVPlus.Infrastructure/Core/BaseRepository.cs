@@ -4,7 +4,7 @@ using TVPlus.Infrastructure.Context;
 
 namespace TVPlus.Infrastructure.Core
 {
-    public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
         private readonly TVPlusContext _dbContext;
         private readonly DbSet<TEntity> _DbEntity;

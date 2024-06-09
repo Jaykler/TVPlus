@@ -1,5 +1,4 @@
-﻿
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TVPlus.Application.Interfaces.Services;
 using TVPlus.Application.Services;

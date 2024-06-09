@@ -1,8 +1,8 @@
 ﻿
+using TVPlus.Application.Interfaces.Repositories;
 using TVPlus.Domain.Entities;
 using TVPlus.Infrastructure.Context;
 using TVPlus.Infrastructure.Core;
-using TVPlus.Infrastructure.Interfaces;
 
 namespace TVPlus.Infrastructure.Repositories
 {

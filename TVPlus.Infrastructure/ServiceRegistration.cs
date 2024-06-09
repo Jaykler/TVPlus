@@ -1,5 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TVPlus.Application.Interfaces.Repositories;
@@ -25,9 +24,9 @@ namespace TVPlus.Infrastructure
 
             #region Repositories
             services.AddTransient(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            services.AddTransient<Interfaces.ISerieRepository, SeriesRepository>();
-            services.AddTransient<Interfaces.IProductoraRepository,ProductoraRepository>();
-            services.AddTransient<Interfaces.IGeneroRepository, GeneroRepository>();
+            services.AddTransient<ISerieRepository, SeriesRepository>();
+            services.AddTransient<IProductoraRepository,ProductoraRepository>();
+            services.AddTransient<IGeneroRepository, GeneroRepository>();
             #endregion
 
         }
